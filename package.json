@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "concurrently \"next\" \"cd studio && sanity start\"",
     "build": "echo 'Building Sanity to public/studio…' && cd studio && sanity build ../public/studio -y && cd .. && next build",
-    "start": "vercel dev",
+    "start": "npm run dev",
     "postinstall": "lerna bootstrap",
     "check-template": "sanity-template check"
   },
